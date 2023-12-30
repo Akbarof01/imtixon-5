@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="website icon" type="svg"
+    href="/svg/flag-icon.svg" />
+    <title>Imtixon</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header text-color element-color header-dark">
+      <div class="header-div">
+        <h2 class="heading">Where in the world ?</h2>
+        <button class="mode-btn text-color white-mode-btn">Dark Mode</button>
+      </div>
+    </header>
+
+    <section class="section bg-color">
+      <div class="main-div">
+        <!-- Input -->
+        <div class="input-div">
+          <input
+            type="text"
+            id="search"
+            name="search"
+            title="search"
+            placeholder="Search for a country..."
+            class="text-color white-search element-color"
+          />
+
+          <div class="element-color region-div">
+            <label class="text-color" for="region">Region:</label>
+            <select name="region" id="region" class="text-color white-region element-color">
+              <option value="all" selected>All</option>
+              <option value="africa">Africa</option>
+              <option value="americas">America</option>
+              <option value="asia">Asia</option>
+              <option value="europe">Europe</option>
+              <option value="oceania">Oceania</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Output -->
+        <div class="output-div"></div>
+      </div>
+
+      <div class="detail-div">
+        <div class="back-btn-div">
+          <button class="back-btn text-color element-color back-btn-dark">Back</button>
+        </div>
+
+        <div class="detail-output-div">
+          <img class="detail-img" />
+
+          <div class="detail-content text-color">
+            <div class="detail-content-heading">
+              <h1 class="detail-content-heading-name text-color"></h1>
+            </div>
+
+            <div class="detail-content-details">
+              <div class="detail-content-details-1 text-color"></div>
+              <div class="detail-content-details-2 text-color"></div>
+            </div>
+
+            <div class="detail-content-border">
+              <p class="text-color"><span>Border Countries:</span></p>
+              <div class="detail-content-border-btns text-color"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="top-scroller">
+      <div class="arrow-up">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 492 492"
+          xml:space="preserve"
+          fill="#fff"
+        >
+        </svg>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
